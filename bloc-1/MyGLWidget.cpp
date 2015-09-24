@@ -58,6 +58,8 @@ void MyGLWidget::resizeGL (int w, int h)
 void MyGLWidget::createBuffers ()
 {
   GLuint pos, col;
+  GLint varLoc;
+  GLfloat scl;
 
   glm::vec3 Vertices[3];  // Tres vèrtexs amb X, Y i Z
   Vertices[0] = glm::vec3(-1.0, -1.0, 0.0);
@@ -94,7 +96,10 @@ void MyGLWidget::createBuffers ()
   glVertexAttribPointer(col, 3, GL_FLOAT, GL_FALSE, 0, 0);
   glEnableVertexAttribArray(col);
 
-
+  varLoc = glGetUniformLocation(program->programId(),"val");
+  
+  scl = 0.2;  
+  glUniform1f(varLoc, scl);
 
   // Desactivem el VAO
   glBindVertexArray(0);
