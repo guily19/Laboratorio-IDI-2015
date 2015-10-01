@@ -2,6 +2,9 @@
 #include "glm/glm.hpp"
 #include <QGLShader>
 #include <QGLShaderProgram>
+#include <QKeyEvent>
+
+#define GLM_FORCE_RADIANS
 
 class MyGLWidget : public QGLWidget 
 {
@@ -19,7 +22,13 @@ class MyGLWidget : public QGLWidget
     virtual void paintGL ();
  
     // resizeGL() - Es cridat quan canvi la mida del widget
-    virtual void resizeGL (int width, int height);  
+    virtual void resizeGL (int width, int height);
+/*
+    virtual void mousePressEvent ( QMouseEvent * e ); // apretar el ratoli
+    virtual void mouseReleaseEvent ( QMouseEvent * e ); // desapretar el ratoli
+    virtual void mouseMoveEvent ( QMouseEvent * e ); //apretar i moure el ratoli
+*/    
+    virtual void keyPressEvent ( QKeyEvent * e ); // apretar una tecla del teclat
 
   private:
     void createBuffers ();
@@ -29,4 +38,9 @@ class MyGLWidget : public QGLWidget
     QGLShaderProgram *program;
 
     GLuint VAO, VBO, VBOcolor, pos, col;
+
+    GLint varLoc;
+
+    float scl;
+
 };

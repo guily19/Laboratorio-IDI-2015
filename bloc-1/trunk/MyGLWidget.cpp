@@ -50,6 +50,29 @@ void MyGLWidget::paintGL ()
   glBindVertexArray(0);
 }
 
+void MyGLWidget::keyPressEvent(QKeyEvent *e){
+  
+  switch(e->key()){
+    case Qt::Key_Escape:
+      exit(0);
+    case Qt::Key_S:
+      if(scl < 1.0){
+        scl += 0.1;
+        glUniform1f(varLoc,scl);
+        updateGL();
+      }
+      break;
+    case Qt::Key_D:
+      if(scl >= 0.2){
+        scl -= 0.1;
+        glUniform1f(varLoc,scl);
+        updateGL();
+      }
+      break;
+    default: e->ignore();//propagar al pare
+  }
+}
+
 void MyGLWidget::resizeGL (int w, int h)
 {
   glViewport (0, 0, w, h);
@@ -58,8 +81,7 @@ void MyGLWidget::resizeGL (int w, int h)
 void MyGLWidget::createBuffers ()
 {
   GLuint pos, col;
-  GLint varLoc;
-  GLfloat scl;
+  
 
   glm::vec3 Vertices[3];  // Tres vèrtexs amb X, Y i Z
   Vertices[0] = glm::vec3(-1.0, -1.0, 0.0);
@@ -93,12 +115,12 @@ void MyGLWidget::createBuffers ()
   // Activem l'atribut que farem servir per vèrtex (només el 0 en aquest cas)
 
   col = glGetAttribLocation(program->programId(),"color"); //lultim color es el nom de la variable en el  shader
-  glVertexAttribPointer(col, 3, GL_FLOAT, GL_FALSE, 0, 0);
+  glVertexAttribPointer(col, 4, GL_FLOAT, GL_FALSE, 0, 0);
   glEnableVertexAttribArray(col);
 
   varLoc = glGetUniformLocation(program->programId(),"val");
   
-  scl = 0.2;  
+  scl = 0.5;  
   glUniform1f(varLoc, scl);
 
   // Desactivem el VAO

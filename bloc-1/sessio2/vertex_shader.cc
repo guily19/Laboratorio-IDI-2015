@@ -12,7 +12,7 @@ void main()
     //Aquesta variable sempre a de seri (gl_Position)
     //La funcio posa un 1 a l'ultim parametre
     //cordenades homogenies es fan per poder operar sempre amb multiplicacions
-    gl_Position = vec4(vertex * val,1.0);
+    gl_Position = vec4(vertex * 0.5,1.0);
     fcolor = color;
     //color = vec3(1.);
 }
