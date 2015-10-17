@@ -1,0 +1,442 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"font",
+				"font-size"
+			],
+			[
+				"bac",
+				"background-color"
+			],
+			[
+				"margin",
+				"margin-top"
+			],
+			[
+				"pro",
+				"projectTransform"
+			],
+			[
+				"gl",
+				"glGenBuffers"
+			],
+			[
+				"GL",
+				"GL_FLOAT"
+			],
+			[
+				"VBO",
+				"VBO_matdiff"
+			],
+			[
+				"VA",
+				"VAO_Homer"
+			],
+			[
+				"glBin",
+				"glBindVertexArray"
+			],
+			[
+				"vie",
+				"viewTransform"
+			],
+			[
+				"proje",
+				"projectTransform"
+			],
+			[
+				"M",
+				"MyGLWidget"
+			],
+			[
+				"sc",
+				"scl"
+			],
+			[
+				"mov",
+				"movZ"
+			],
+			[
+				"mo",
+				"movY"
+			]
+		]
+	},
+	"buffers":
+	[
+		{
+			"file": "/Users/guillem/Development/camBerry/web_portal_FE/view/login.html",
+			"settings":
+			{
+				"buffer_size": 644,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"contents": "<<!DOCTYPE html>\n<html>\n<head>\n	<title> Main Portal</title>\n</head>\n<body>\n<div class=\"header\"></div>\n<div class=\"main_content\">\n	<div class=\"form_wrapper\">\n		<form>\n			\n		</form>\n	</div>\n</div>\n<div class=\"footer\"></div>\n</body>\n</html>",
+			"file": "/Users/guillem/Development/camBerry/web_portal_FE/view/main.html",
+			"file_size": 0,
+			"file_write_time": 130892464670000000,
+			"settings":
+			{
+				"buffer_size": 237,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "/Users/guillem/Development/camBerry/web_portal_FE/view/register.html",
+			"settings":
+			{
+				"buffer_size": 790,
+				"line_ending": "Unix",
+				"name": "register.html"
+			}
+		},
+		{
+			"file": "/Users/guillem/Development/camBerry/web_portal_FE/css/main.css",
+			"settings":
+			{
+				"buffer_size": 160,
+				"line_ending": "Unix"
+			}
+		}
+	],
+	"build_system": "",
+	"build_system_choices":
+	[
+	],
+	"build_varint": "",
+	"command_palette":
+	{
+		"height": 67.0,
+		"last_filter": "",
+		"selected_items":
+		[
+			[
+				"install",
+				"Package Control: Install Package"
+			],
+			[
+				"instal",
+				"Package Control: Install Package"
+			],
+			[
+				"CLOS",
+				"File: Close All"
+			],
+			[
+				"close",
+				"File: Close All"
+			]
+		],
+		"width": 449.0
+	},
+	"console":
+	{
+		"height": 139.0,
+		"history":
+		[
+			"import urllib.request,os,hashlib; h = '2deb499853c4371624f5a07e27c334aa' + 'bf8c4e67d14fb0525ba4f89698a6d7e1'; pf = 'Package Control.sublime-package'; ipp = sublime.installed_packages_path(); urllib.request.install_opener( urllib.request.build_opener( urllib.request.ProxyHandler()) ); by = urllib.request.urlopen( 'http://packagecontrol.io/' + pf.replace(' ', '%20')).read(); dh = hashlib.sha256(by).hexdigest(); print('Error validating download (got %s instead of %s), please try manual install' % (dh, h)) if dh != h else open(os.path.join( ipp, pf), 'wb' ).write(by)"
+		]
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"expanded_folders":
+	[
+		"/Users/guillem/Development/camBerry",
+		"/Users/guillem/Development/camBerry/web_portal_FE",
+		"/Users/guillem/Development/camBerry/web_portal_FE/css"
+	],
+	"file_history":
+	[
+		"/Users/guillem/Library/Application Support/Sublime Text 3/Packages/User/Default (OSX).sublime-keymap",
+		"/Users/guillem/Library/Application Support/Sublime Text 3/Packages/Default/Default (OSX).sublime-keymap",
+		"/Users/guillem/Library/Application Support/Sublime Text 3/Packages/Default/Preferences.sublime-settings",
+		"/Users/guillem/Development/IDI-LAB/bloc-2/trunk/Bloc2-Exemple.pro",
+		"/Users/guillem/Development/IDI-LAB/bloc-1/trunk/MyGLWidget.h",
+		"/Users/guillem/Development/IDI-LAB/bloc-1/trunk/vertex_shader.cc",
+		"/Users/guillem/Development/IDI-LAB/bloc-1/trunk/MyGLWidget.cpp",
+		"/Users/guillem/Development/IDI-LAB/LaboBlock1.pdf",
+		"/Users/guillem/Development/IDI-LAB/bloc-1/MyGLWidget.h",
+		"/Users/guillem/Development/IDI-LAB/bloc-1/trunk/fragment_shader.cc",
+		"/Users/guillem/Development/IDI-LAB/bloc-1/sessio2/vertex_shader.cc",
+		"/Users/guillem/Development/IDI-LAB/bloc-1/sessio2/MyGLWidget.cpp",
+		"/Users/guillem/Development/IDI-LAB/bloc-1/sessio2/fragment_shader.cc",
+		"/Users/guillem/Development/IDI-LAB/bloc-1/vertex_shader.cc",
+		"/Users/guillem/Development/IDI-LAB/bloc-1/MyGLWidget.cpp",
+		"/Users/guillem/Development/IDI-LAB/.gitignore",
+		"/Users/guillem/Library/Application Support/Sublime Text 3/Packages/User/Preferences.sublime-settings",
+		"/Users/guillem/Google Drive/FIB/EDA/jutje/divide and conquer/first_occurrence.cpp",
+		"/Applications/MAMP/htdocs/Umusic/web/wp-content/themes/umusic/header.php",
+		"/Applications/MAMP/htdocs/Umusic/web/wp-content/themes/umusic/footer.php",
+		"/Applications/MAMP/htdocs/Umusic/web/wp-content/themes/umusic/page-templae-home.php",
+		"/Users/guillem/Downloads/localhost.sql",
+		"/Users/guillem/Documents/programes pro1/suma.cpp",
+		"/Users/guillem/Google Drive/updateErrorsScript.php"
+	],
+	"find":
+	{
+		"height": 25.0
+	},
+	"find_in_files":
+	{
+		"height": 0.0,
+		"where_history":
+		[
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": false,
+		"find_history":
+		[
+			"commen",
+			"comment",
+			"glDrawArrays",
+			"load",
+			"pai",
+			"sca",
+			"updateGL",
+			"scl",
+			"varloc",
+			"val",
+			"float",
+			"#",
+			"<?"
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": false,
+		"replace_history":
+		[
+		],
+		"reverse": false,
+		"show_context": true,
+		"use_buffer2": true,
+		"whole_word": false,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"selected": 2,
+			"sheets":
+			[
+				{
+					"buffer": 0,
+					"file": "/Users/guillem/Development/camBerry/web_portal_FE/view/login.html",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 644,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								541,
+								541
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/HTML/HTML.tmLanguage",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 1,
+					"type": "text"
+				},
+				{
+					"buffer": 1,
+					"file": "/Users/guillem/Development/camBerry/web_portal_FE/view/main.html",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 237,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								237,
+								0
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/HTML/HTML.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 3,
+					"type": "text"
+				},
+				{
+					"buffer": 2,
+					"file": "/Users/guillem/Development/camBerry/web_portal_FE/view/register.html",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 790,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								199,
+								199
+							]
+						],
+						"settings":
+						{
+							"auto_name": "register.html",
+							"syntax": "Packages/HTML/HTML.tmLanguage",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 0,
+					"type": "text"
+				},
+				{
+					"buffer": 3,
+					"file": "/Users/guillem/Development/camBerry/web_portal_FE/css/main.css",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 160,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								97,
+								97
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/CSS/CSS.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 2,
+					"type": "text"
+				}
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 25.0
+	},
+	"input":
+	{
+		"height": 33.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"output.find_results":
+	{
+		"height": 0.0
+	},
+	"pinned_build_system": "",
+	"project": "camBerry.sublime-project",
+	"replace":
+	{
+		"height": 46.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 500.0,
+		"last_filter": "",
+		"selected_items":
+		[
+			[
+				"",
+				"~/Development/sublime_projects/IDI-LAB.sublime-project"
+			]
+		],
+		"width": 380.0
+	},
+	"select_symbol":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"selected_group": 0,
+	"settings":
+	{
+	},
+	"show_minimap": true,
+	"show_open_files": false,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 233.0,
+	"status_bar_visible": true,
+	"template_settings":
+	{
+	}
+}
