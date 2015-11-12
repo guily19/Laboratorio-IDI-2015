@@ -5,7 +5,6 @@
 #include <QKeyEvent>
 #include "glm.hpp"
 #include "gtc/matrix_transform.hpp"
-#include "gtc/matrix_inverse.hpp"
 
 #include "model.h"
 
@@ -51,19 +50,14 @@ class MyGLWidget : public QGLWidget
 
     GLuint transLoc, projLoc, viewLoc;
     GLuint vertexLoc, normalLoc, matambLoc, matdiffLoc, matspecLoc, matshinLoc;
-    GLuint llumFixaLoc, llumCameraLoc;
     Model patr;
     // paràmetres calculats a partir de la capsa contenidora del model
     glm::vec3 centrePatr;
     float escala;
     double radiEsc;
 
-    glm::vec3 llumFixa, llumCamera;
-    bool activaLlumFixa, activaLlumCamera;
-
-
     typedef  enum {NONE, ROTATE} InteractiveAction;
     InteractiveAction DoingInteractive;
     int xClick, yClick;
-    float angleY, angleX;
+    float angleY;
 };

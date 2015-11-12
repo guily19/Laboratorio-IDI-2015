@@ -302,7 +302,8 @@ void MyGLWidget::viewTransform ()
   glm::mat4 View;  // Matriu de posició i orientació
   View = glm::translate(glm::mat4(1.f), glm::vec3(0, 0, -2*radiEsc));
   View = glm::rotate(View, -angleY, glm::vec3(0, 1, 0));
-  View = glm::rotate(View, -angleX, glm::vec3(cos(angleY), 0,sin(angleY)));  
+  View = glm::rotate(View, -angleX, glm::vec3(1, 0, 0));
+
   glUniformMatrix4fv (viewLoc, 1, GL_FALSE, &View[0][0]);
 }
 
@@ -367,11 +368,6 @@ void MyGLWidget::keyPressEvent (QKeyEvent *e)
         std::cout << "llumCamera -> " << llumCamera[0] << llumCamera[1] << llumCamera[2] << std::endl;
         glUniform3fv(llumCameraLoc,1,&llumCamera[0]);
         updateGL();
-    break;
-    case Qt::Key_O:
-        angleY = 0.0;
-        angleX = 0.0;
-        viewTransform();
     break;
     case Qt::Key_Escape:
         exit(0);
