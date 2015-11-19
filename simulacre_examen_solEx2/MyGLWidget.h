@@ -62,5 +62,4 @@ class MyGLWidget : public QGLWidget
     int xClick, yClick;
     float angleY;
     float minx, miny, minz, maxx, maxy, maxz;
-    bool colorBlau;
 };

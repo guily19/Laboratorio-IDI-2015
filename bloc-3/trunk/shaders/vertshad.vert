@@ -16,6 +16,8 @@ out vec3 matdiffF;
 out vec3 matspecF;
 out float matshinF;
 
+uniform vec3 posFocusModel;
+
 uniform mat4 proj;
 uniform mat4 view;
 uniform mat4 TG;
@@ -32,8 +34,6 @@ void main()
 
     mat3 NormalMatrix = inverse(transpose(mat3(view*TG)));
     normalSCO = NormalMatrix * normal;
-
-
 
     vec4 vertexSCA = TG * vec4(vertex,1.0);
     vertexSCO = view * vertexSCA;

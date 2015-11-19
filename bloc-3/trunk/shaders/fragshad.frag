@@ -5,9 +5,12 @@ in vec3 matdiffF;
 in vec3 matspecF;
 in float matshinF;
 
+uniform bool colorBlau;
+
 in vec4 vertexSCO;
 in vec3 normalSCO;
 
+in vec3 posFocusModel;
 
 out vec4 FragColor;
 
@@ -32,8 +35,9 @@ vec3 Lambert (vec3 NormSCO, vec3 L)
     vec3 colRes = llumAmbient * matambF;
 
     // Afegim component difusa, si n'hi hax
-    if (dot (L, NormSCO) > 0)
-      colRes = colRes + colorLlum * matdiffF * dot (L, NormSCO);
+    if (dot (L, NormSCO) > 0){
+        colRes = colRes + colorLlum * matdiffF * dot (L, NormSCO);
+    }
     return (colRes);
 }
 

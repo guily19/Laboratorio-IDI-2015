@@ -25,6 +25,7 @@ void MyGLWidget::initializeGL ()
   createBuffers ();
   projectTransform ();
   viewTransform ();
+  colorBlau = true;
 }
 
 void MyGLWidget::paintGL ()
@@ -280,7 +281,10 @@ void MyGLWidget::modelTransformPatricio ()
 
 void MyGLWidget::modelTransformPatricio2 ()
 {
-  glm::mat4 TG(1.0);  // Matriu de transformació
+  glm::mat4 TG;  // Matriu de transformació
+  // TG = glm::scale(TG, glm::vec3(0.2, 0.2, 0.2));
+  TG = glm::rotate(TG, (float)M_PI, glm::vec3(0,0,1));
+  TG = glm::translate(TG,glm::vec3(0,-(maxy-miny)*escala,0));
   TG = glm::scale(TG, glm::vec3(escala, escala, escala));
   TG = glm::translate(TG, -centrePatr);
   
@@ -315,7 +319,6 @@ void MyGLWidget::viewTransform ()
 void MyGLWidget::calculaCapsaModel ()
 {
   // Càlcul capsa contenidora i valors transformacions inicials
-  float minx, miny, minz, maxx, maxy, maxz;
   minx = maxx = patr.vertices()[0];
   miny = maxy = patr.vertices()[1];
   minz = maxz = patr.vertices()[2];

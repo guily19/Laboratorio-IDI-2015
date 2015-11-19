@@ -42,6 +42,7 @@ class MyGLWidget : public QGLWidget
     void viewTransform ();
     void modelTransformTerra ();
     void modelTransformPatricio ();
+    void modelTransformPatricio2 ();
     void calculaCapsaModel ();
 
     // VAO i VBO names
@@ -51,19 +52,20 @@ class MyGLWidget : public QGLWidget
 
     GLuint transLoc, projLoc, viewLoc;
     GLuint vertexLoc, normalLoc, matambLoc, matdiffLoc, matspecLoc, matshinLoc;
-    GLuint llumFixaLoc, llumCameraLoc;
-    Model patr;
+    GLuint llumFixaLoc, llumCameraLoc, colorBlauLoc;
+    Model patr ,patr2;
     // paràmetres calculats a partir de la capsa contenidora del model
     glm::vec3 centrePatr;
     float escala;
     double radiEsc;
 
     glm::vec3 llumFixa, llumCamera;
-    bool activaLlumFixa, activaLlumCamera;
+    bool activaLlumFixa, activaLlumCamera, colorBlau;
 
 
     typedef  enum {NONE, ROTATE} InteractiveAction;
     InteractiveAction DoingInteractive;
     int xClick, yClick;
     float angleY, angleX;
+    float minx, miny, minz, maxx, maxy, maxz;
 };
